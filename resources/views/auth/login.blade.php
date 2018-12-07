@@ -62,8 +62,7 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="url('/login/google')" class="btn btn primary">Login with Google</a>
-                         <a href="url('/login/facebook')" class="btn btn primary">Login with facebook</a>
+                         <a href="login/facebook')" class="btn btn primary">Login with facebook</a>
                     </form>
                 </div>
             </div>
