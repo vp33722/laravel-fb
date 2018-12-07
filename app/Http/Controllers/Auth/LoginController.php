@@ -77,18 +77,18 @@ class LoginController extends Controller
     }
 
 
-    private function findOrCreateUser($googleuser)
+    private function findOrCreateUser($facebookuser)
     {
-        $authUser = User::where('google_id', $googleuser->id)->first();
+        $authUser = User::where('facebook_id', $facebookuser->id)->first();
 
         if ($authUser){
             return $authUser;
         }
 
         return User::create([
-            'name' => $googleuser->name,
-            'email' => $googleuser->email,
-            'google_id' => $googleuser->id,
+            'name' => $facebookuser->name,
+            'email' => $facebookuser->email,
+            'facebook_id' => $facebookuser->id,
             'password' =>bcrypt('1234')
         ]);
     }

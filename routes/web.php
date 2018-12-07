@@ -12,9 +12,6 @@
 */
 
 
-Route::get('/login/google', 'Auth\LoginController@redirectToProvider');
-Route::get('callback', 'Auth\LoginController@handleProviderCallback');
-
 Route::get('/login/facebook', 'Auth\LoginController@redirectToProvider');
 Route::get('callback', 'Auth\LoginController@handleProviderCallback');
 
@@ -48,7 +45,7 @@ Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm')->n
 Route::get('/',function()
 {
 
-	return view('welcome');
+	return view('auth.login');
 });
 
 Auth::routes(['verify' => true]);
@@ -56,7 +53,6 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 Route::get('admin','AdminController@index')->name('admin');
-	
 Route::prefix('admin')->group(function(){
 
 	Route::get('login','Auth\AdminLoginController@showLoginForm');

@@ -5,7 +5,6 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <h1>User-login-form</h1>
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
@@ -63,6 +62,8 @@
                                 </a>
                             </div>
                         </div>
+                        <a href="url('/login/google')" class="btn btn primary">Login with Google</a>
+                         <a href="url('/login/facebook')" class="btn btn primary">Login with facebook</a>
                     </form>
                 </div>
             </div>

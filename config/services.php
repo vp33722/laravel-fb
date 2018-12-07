@@ -38,7 +38,7 @@ return [
 
    'client_id' =>'201519835614-nn8shr4hdcli1unsuu6k0s8al5c8nin2.apps.googleusercontent.com',
     'client_secret' =>'kpeLVxxkiUQiUEyFuc08V0ux',
-    'redirect' => 'http://localhost:8000/callback'
+    'redirect' => 'https://phplaravel-224667-684245.cloudwaysapps.com/callback'
     ],
 'facebook' => [
 
