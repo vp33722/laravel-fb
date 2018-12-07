@@ -67,7 +67,7 @@ class LoginController extends Controller
     {
         //$user = Socialite::driver('google')->user();
          $user = Socialite::driver('facebook')->user();
-          dd($users);
+          dd($user);
           exit;
        if($user)
        {
