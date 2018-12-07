@@ -35,16 +35,16 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 'google' => [
-   
-   'client_id' =>'201519835614-nn8shr4hdcli1unsuu6k0s8al5c8nin2.apps.googleusercontent.com',       
-    'client_secret' =>'kpeLVxxkiUQiUEyFuc08V0ux', 
+
+   'client_id' =>'201519835614-nn8shr4hdcli1unsuu6k0s8al5c8nin2.apps.googleusercontent.com',
+    'client_secret' =>'kpeLVxxkiUQiUEyFuc08V0ux',
     'redirect' => 'http://localhost:8000/callback'
     ],
 'facebook' => [
-   
-    'client_id' =>'640116403052502',       
-    'client_secret' =>'84f07b2315a346ac1beb39842db5461e', 
-    'redirect' => 'http://localhost:8000/callback'
+
+    'client_id' =>'418048292035034',
+    'client_secret' =>'fc0fdabbbf2173e9e94818e32e740c11',
+    'redirect' => 'https://phplaravel-224667-684245.cloudwaysapps.com/callback'
     ],
 
 ];
